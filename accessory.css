@@ -1,0 +1,395 @@
+html,
+body {
+  font-family: sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+/* Navigation Styles */
+nav {
+  background-color: black;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.home {
+  height: 60px;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  height: 60px;
+}
+.item1,
+.item2,
+.item3 {
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 12%;
+}
+.mouse-item,
+.keybord-item,
+.headphone-item {
+  margin-top: 10%;
+  font-size: 4rem;
+}
+.mouse,
+.keybord,
+.headphone {
+  width: 25%;
+  height: 500px;
+}
+.mouse > img:hover {
+  transform: scale(1.1);
+}
+.keybord > img:hover {
+  transform: scale(1.1);
+}
+.headphone > img:hover {
+  transform: scale(1.1);
+}
+.mouse img {
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+button {
+  color: white;
+  height: 5%;
+  font-weight: bolder;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  margin-top: 3.5%;
+  margin-left: 2%;
+}
+.orginal-price {
+  position: absolute;
+  text-decoration: line-through;
+  margin-top: 5%;
+  margin-left: 3%;
+  background-color: whitesmoke;
+}
+span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 1%;
+  margin-top: 3%;
+  font-weight: bolder;
+  margin-left: 17%;
+  background-color: red;
+  border: 1px solid yellow;
+  height: 2%;
+  border-radius: 10px;
+}
+.product-name {
+  position: absolute;
+  margin-left: 5%;
+  font-size: 2rem;
+}
+/* gpu */
+.keybord img {
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 400px;
+  height: 400px;
+  object-fit: covers;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+/* headphone */
+.headphone img {
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 400px;
+  height: 400px;
+  object-fit: covers;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px; /* Space above footer */
+}
+
+footer > p {
+  font-size: 1.5rem;
+}
+/* responsive part */
+@media screen and (max-width: 660px) {
+  nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .home {
+    height: 40px;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation {
+    height: 40px;
+  }
+  .item1,
+  .item2,
+  .item3 {
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .mouse-item,
+  .keybord-item,
+  .headphone-item {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2rem;
+  }
+  .mouse,
+  .keybord,
+  .headphone {
+    width: auto;
+    height: 500px;
+    margin-right: 10%;
+  }
+  button {
+    color: white;
+    height: 20px;
+    font-weight: bolder;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 8%;
+  }
+
+  span {
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin-top: 9%;
+    font-weight: bolder;
+    margin-left: 250px;
+    background-color: red;
+    border: 1px solid yellow;
+    height: 2%;
+    width: 50px;
+    border-radius: 10px;
+  }
+  .orginal-price {
+    position: absolute;
+    text-decoration: line-through;
+    margin-top: 16%;
+    margin-left: 8%;
+  }
+  .mouse img {
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    object-fit: covers;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  .keybord img {
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    object-fit: covers;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  /* headphone */
+
+  .headphone img {
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    object-fit: covers;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px; /* Space above footer */
+  }
+
+  footer > p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 661px) and (max-width: 1224px) {
+  nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .item1,
+  .item2,
+  .item3 {
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    gap: 100px;
+  }
+
+  .mouse-item {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2rem;
+  }
+  .headphone-item,
+  .keybord-item {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 2rem;
+  }
+  .mouse,
+  .keybord,
+  .headphone {
+    width: 20%;
+    height: 500px;
+  }
+  .mouse > img:hover {
+    transform: scale(1.1);
+  }
+  .keybord > img:hover {
+    transform: scale(1.1);
+  }
+  .headphone > img:hover {
+    transform: scale(1.1);
+  }
+  button {
+    color: white;
+    height: 20px;
+    font-weight: bolder;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 3.5%;
+    margin-left: 2%;
+  }
+
+  span {
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+    font-weight: bolder;
+    margin-left: 20%;
+    background-color: red;
+    border: 1px solid yellow;
+    height: 2%;
+    width: 50px;
+    border-radius: 10px;
+  }
+  .orginal-price {
+    background-color: whitesmoke;
+    position: absolute;
+    text-decoration: line-through;
+    margin-top: 7%;
+    margin-left: 3%;
+    color: black;
+    font-weight: bolder;
+  }
+  .mouse img {
+    margin-top: 10%;
+    width: 250px;
+    height: 250px;
+    object-fit: covers;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  .keybord img {
+    margin-top: 10%;
+    width: 250px;
+    height: 250px;
+    object-fit: covers;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  /* headphone */
+
+  .headphone img {
+    margin-top: 10%;
+    width: 250px;
+    height: 250px;
+    object-fit: covers;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  .product-name {
+    position: absolute;
+    margin-left: 10%;
+    font-size: 20px;
+  }
+}
